@@ -11,16 +11,23 @@ const Rocket = (props) => {
   const handleClick = () => {
     dispatch(reserveRocket(id));
   };
+
   return (
     <li className="rocket-container">
       <img className="rocket-image" src={image} alt={name} />
       <div>
         <h2>{name}</h2>
         <p className="rocket-description">
-          <span className="rocket-reserved">{reserved ? 'Reserved' : 'Not Reserved'}</span>
+          { reserved && <span className="rocket-reserved">Reserved</span> }
           {description}
         </p>
-        <button className="rocket-button" type="button" onClick={handleClick}>Reserve Rocket</button>
+        <button
+          className={reserved ? 'cancel-rocket-button' : 'reserve-rocket-button'}
+          type="button"
+          onClick={handleClick}
+        >
+          { reserved ? 'Cancel Reservation' : 'Reserve Rocket' }
+        </button>
       </div>
     </li>
   );
