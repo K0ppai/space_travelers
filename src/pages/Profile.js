@@ -5,12 +5,12 @@ const Profile = () => {
   const rockets = useSelector((state) => state.rockets.rockets);
 
   return (
-    <div className="profile-container">
+    <div className="my-rockets-container">
       <section>
         <h1>My Rockets</h1>
-        <ul>
+        <ul className="rocket-reserved-container">
           {rockets.filter((rocket) => rocket.rocket_reserved).map((rocket) => (
-            <li key={rocket.rocket_id}>
+            <li key={rocket.rocket_id} className="rockets-reserved">
               {rocket.rocket_name}
             </li>
           ))}
