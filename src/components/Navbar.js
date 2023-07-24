@@ -10,13 +10,13 @@ const Navbar = () => {
     },
     {
       id: 2,
-      title: 'My Profile',
-      to: '/profile',
+      title: 'Missions',
+      to: '/missions',
     },
     {
       id: 3,
-      title: 'Missions',
-      to: '/missions',
+      title: 'My Profile',
+      to: '/profile',
     },
   ];
   return (
