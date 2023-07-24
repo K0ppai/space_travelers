@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import './App.css';
 import Navbar from './components/Navbar';
 import Missions from './components/missions/missions';
+import Profile from './pages/Profile';
 import Rockets from './pages/Rockets';
 import { fetchRockets } from './redux/Rockets/rocket';
 
@@ -24,6 +25,7 @@ function App() {
         />
         <Route path="/" element={<Rockets />} />
         <Route path="/Rockets" element={<Rockets />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </div>
   );
