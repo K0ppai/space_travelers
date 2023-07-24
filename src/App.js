@@ -22,8 +22,8 @@ function App() {
           path="/missions"
           element={<Missions />}
         />
-        {/* <Route path="/" element={<Rockets />} /> */}
-        <Route path="/rockets" element={<Rockets />} />
+        <Route path="/" element={<Rockets />} />
+        <Route path="/Rockets" element={<Rockets />} />
       </Routes>
     </div>
   );
