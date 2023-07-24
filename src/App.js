@@ -1,7 +1,8 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import { Route, Routes } from 'react-router';
 import Navbar from './components/Navbar';
 import Missions from './components/missions/missions';
+import Rockets from './pages/Rockets';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
           path="/missions"
           element={<Missions />}
         />
+        <Route path="/" element={<Rockets />} />
+        <Route path="/rockets" element={<Rockets />} />
       </Routes>
     </div>
   );
