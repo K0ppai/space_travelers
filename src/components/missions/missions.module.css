@@ -1,12 +1,15 @@
 
-.gridContainer,.headerGridContainer{
-  padding: 0px 30px;
+.gridContainer,
+.headerGridContainer {
+  padding: 0 30px;
   display: grid;
   grid-template-columns: 12% 55% auto 15%;
 }
-.headerGridContainer{
-  padding: 15px 30px 0px 30px;
+
+.headerGridContainer {
+  padding: 15px 30px 0 30px;
 }
-.gridItems{
+
+.gridItems {
   border: 1px solid gray;
 }
