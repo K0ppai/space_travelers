@@ -12,7 +12,7 @@ const Navbar = () => {
       id: 2,
       title: 'Missions',
       to: '/missions',
-    }
+    },
   ];
   return (
     <header className="header-container">
