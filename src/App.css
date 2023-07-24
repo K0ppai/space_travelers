@@ -58,3 +58,7 @@ a {
 .link-item > a:hover {
   border-bottom: 4px solid #000;
 }
+
+.link-item .active {
+  text-decoration: underline;
+}

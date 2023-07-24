@@ -8,6 +8,11 @@ const Navbar = () => {
       title: 'My Profile',
       to: '/profile',
     },
+    {
+      id: 2,
+      title: 'Missions',
+      to: '/missions',
+    },
   ];
   return (
     <header className="header-container">
