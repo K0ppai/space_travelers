@@ -1,16 +1,10 @@
-import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions, joinMission, leaveMission } from '../../redux/missions/missionsSlice';
+import { joinMission, leaveMission } from '../../redux/missions/missionsSlice';
 import styles from './missions.module.css';
 
 function Missions() {
   const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
-
   return (
     <table className={styles.tableContainer}>
       <thead>

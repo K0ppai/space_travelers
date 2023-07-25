@@ -12,17 +12,16 @@ const ActiveRockets = () => {
       {reservedRockets.length ? (
         <Table bordered>
           <tbody>
-            {
-        reservedRockets.map((rocket) => (
-          <tr key={rocket.id}>
-            <td>{rocket.title}</td>
-          </tr>
-        ))
-}
+            {reservedRockets.map((rocket) => (
+              <tr key={rocket.id}>
+                <td>{rocket.title}</td>
+              </tr>
+            ))}
           </tbody>
-
         </Table>
-      ) : <p>No Active rockets</p>}
+      ) : (
+        <p>No Active rockets</p>
+      )}
     </div>
   );
 };
