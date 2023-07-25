@@ -71,27 +71,6 @@ ul {
   text-decoration: underline;
 }
 
-/* .my-rockets-container {
-  padding: 3%;
-} */
-
-/* .rocket-reserved-container {
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0 1px 4px;
-  max-width: 50%;
-  margin-top: 1%;
-} */
-
-/* .rockets-reserved {
-  padding: 3%;
-} */
-
-/* .profile-container {
-  background-color: #f2f2f2;
-} */
-
 ul,
 li {
   list-style: none;
@@ -179,3 +158,25 @@ li {
   margin-right: 3%;
   cursor: pointer;
 }
+
+.myProfileContainer {
+  display: flex;
+  justify-content: center;
+  padding-inline: 4rem;
+}
+
+.titleTable {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mission-table {
+  width: 50%;
+}
+
+.td {
+  font-weight: 500;
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    font-size: 16px;
+  }
