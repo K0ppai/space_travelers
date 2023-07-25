@@ -7,7 +7,7 @@ const ActiveRockets = () => {
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <div className=" mission-table mx-5 px-4">
+    <div className=" Rocket-table mx-5 px-4">
       <h2 className="titleTable">My Rockets</h2>
       {reservedRockets.length ? (
         <Table bordered>
