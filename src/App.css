@@ -68,6 +68,7 @@ ul {
 
 .link-item .active {
   text-decoration: underline;
+  color: blue;
 }
 
 ul,
