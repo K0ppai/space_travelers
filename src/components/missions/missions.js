@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../../redux/missions/missionsSlice';
+import { fetchMissions, joinMission, leaveMission } from '../../redux/missions/missionsSlice';
 import styles from './missions.module.css';
 
 function Missions() {
@@ -12,28 +12,48 @@ function Missions() {
   }, [dispatch]);
 
   return (
-    <>
-      <div className={styles.headerGridContainer}>
-        <h2 className={styles.gridItems}>Missions</h2>
-        <h2 className={styles.gridItems}>Description</h2>
-        <h2 className={styles.gridItems}>Status</h2>
-        <h2 className={styles.gridItems}> </h2>
-      </div>
-      <div>
-        <ul>
-          {missions.map((mission) => (
-            <li key={mission.mission_id} className={styles.gridContainer}>
-              <span className={styles.gridItems}>{mission.mission_name}</span>
-              <span className={styles.gridItems}>{mission.description}</span>
-              <span className={styles.gridItems}>Not a Member</span>
-              <button className={styles.gridItems} type="button">
-                Join Mission
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    <table className={styles.tableContainer}>
+      <thead>
+        <tr className={styles.headerGridContainer}>
+          <th className={styles.bold}>Missions</th>
+          <th className={styles.bold}>Description</th>
+          <th className={styles.bold}>Status</th>
+          <th className={styles.bold}> </th>
+        </tr>
+      </thead>
+      <tbody>
+        {missions.map((mission) => (
+          <tr key={mission.mission_id} className={styles.gridContainer}>
+            <td className={styles.bold}>
+              <span>{mission.mission_name}</span>
+            </td>
+            <td>
+              <span>{mission.description}</span>
+            </td>
+            <td className={styles.missionStatus}>
+              <span
+                className={`${styles.gridItems} ${styles.member} ${
+                  mission.reserved ? styles.active : ''
+                }`}
+              >
+                {mission.reserved ? 'Active Member' : 'Not a Member'}
+              </span>
+            </td>
+            <td type="button" className={styles.missionStatus}>
+              {mission.reserved ? (
+                <button type="button" onClick={() => dispatch(leaveMission(mission.mission_id))} className={styles.leaveBtn}>
+                  Leave Mission
+                </button>
+              ) : (
+                <button type="button" onClick={() => dispatch(joinMission(mission.mission_id))} className={styles.joinBtn}>
+                  Join Mission
+                </button>
+              )}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 }
 
