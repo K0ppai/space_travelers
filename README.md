@@ -1,11 +1,5 @@
 <a name="readme-top"></a>
 
-<div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-</div>
-
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -53,7 +47,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://space-traveler-1wv4.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -123,8 +117,6 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Create_basic_structure_for_Rockets]**
-- [ ] **[Create_basic_structure_for_missions]**
 - [ ] **[Create_basic_structure_for_Dragons]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
