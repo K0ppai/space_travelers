@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { rocketHandler } from '../redux/rockets/rocketSlice';
+import { rocketHandler } from '../redux/Rockets/rocketSlice';
 
 function Rocket({
   id, title, image, description, reserved,
