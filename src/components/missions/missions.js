@@ -4,7 +4,6 @@ import styles from './missions.module.css';
 
 function Missions() {
   const missions = useSelector((state) => state.missions.missions);
-  console.log(missions);
   const dispatch = useDispatch();
   return (
     <table className={styles.tableContainer}>
