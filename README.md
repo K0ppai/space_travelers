@@ -117,7 +117,7 @@ To run tests, run the following command:
 
 - GitHub: [@Abd elhakim Zayan](https://github.com/abdozayan12)
 - Twitter: [@Abd elhakim Zayan](https://twitter.com/zayan_abdo)
-- LinkedIn: [@Abd elhakim Zayan](https://www.linkedin.com/in/htet-wai-yan-903354263/)
+- LinkedIn: [@Abd elhakim Zayan](https://www.linkedin.com/in/abdozayan/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
