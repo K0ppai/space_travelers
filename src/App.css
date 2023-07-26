@@ -61,8 +61,7 @@ ul {
   font-size: 20px;
 }
 
-.link-item > a:hover,
-.link-item > a:focus {
+.link-item > a:hover {
   border-bottom: 3px solid #5c73a2;
   color: #5c73a2;
 }
@@ -161,7 +160,7 @@ li {
 
 .myProfileContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding-inline: 4rem;
 }
 
