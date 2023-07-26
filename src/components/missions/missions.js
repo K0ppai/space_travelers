@@ -4,6 +4,7 @@ import styles from './missions.module.css';
 
 function Missions() {
   const missions = useSelector((state) => state.missions.missions);
+  console.log(missions);
   const dispatch = useDispatch();
   return (
     <table className={styles.tableContainer}>
@@ -35,11 +36,20 @@ function Missions() {
             </td>
             <td type="button" className={styles.missionStatus}>
               {mission.reserved ? (
-                <button type="button" onClick={() => dispatch(leaveMission(mission.mission_id))} className={styles.leaveBtn}>
+                <button
+                  type="button"
+                  onClick={() => dispatch(leaveMission(mission.mission_id))}
+                  className={styles.leaveBtn}
+                >
                   Leave Mission
                 </button>
               ) : (
-                <button type="button" onClick={() => dispatch(joinMission(mission.mission_id))} className={styles.joinBtn}>
+                <button
+                  type="button"
+                  onClick={() => dispatch(joinMission(mission.mission_id))}
+                  className={styles.joinBtn}
+                  data-testid={mission.mission_id}
+                >
                   Join Mission
                 </button>
               )}
