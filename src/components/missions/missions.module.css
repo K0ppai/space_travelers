@@ -1,0 +1,78 @@
+
+.gridContainer,
+.headerGridContainer {
+  margin: 0 30px;
+  display: grid;
+  grid-template-columns: 12% 55% auto 15%;
+}
+
+.headerGridContainer {
+  margin: 15px 30px 0 30px;
+}
+
+.tableContainer {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+th,
+td {
+  border: 1px solid #d3d3d3;
+  padding: 10px 5px;
+}
+
+.missionStatus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItems.member {
+  background-color: rgb(109, 117, 125);
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+.gridItems.member.active {
+  color: white;
+  background-color: rgb(24, 162, 184);
+}
+
+.bold {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.joinBtn,
+.leaveBtn {
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 8px 15px;
+  font-size: 15px;
+  border-radius: 4px;
+  border: 1.5px solid  rgb(66, 72, 77);
+  color: rgb(66, 72, 77);
+}
+
+.joinBtn:hover {
+  background-color: rgb(66, 72, 77);
+  color: white;
+  transition: 0.3s;
+}
+
+.leaveBtn {
+  border-color: rgb(220, 54, 69);
+  color: rgb(220, 54, 69);
+}
+
+.leaveBtn:hover {
+  background-color: rgb(220, 54, 69);
+  color: white;
+  transition: 0.3s;
+}
