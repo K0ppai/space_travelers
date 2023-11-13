@@ -24,7 +24,7 @@
 
 # 📖 [Space_Travelers'_Hub] <a name="about-project"></a>
 
-**[Space_Travelers'_Hub]** is a web application for a company that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space mission.
+A website that consists of three main pages: one for browsing and reserving rockets, another for exploring and joining missions, and a third page to view reserved rockets and joined missions. Built with: React.js and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
